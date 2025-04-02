@@ -23,8 +23,11 @@ public class App {
         System.out.printf(v2+" "+v1);
     }
     public static void main(String[] args) throws Exception {
-        funcao_teste();
-
-
+        CorpoHumano c1 = new CorpoHumano(0, 0,0,0);
+        // c1.massa = "2"; Tipagem o atributo está desconhecido como privado
+        // c1.massa = "2"; Era pra ser float mas está atribuido como string
+        c1.SetAltura(1.78);
+        c1.SetPeso(78);
+        System.out.println("O valor do seu IMC é "+ c1.GetImc());
     }
 }
